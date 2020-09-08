@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lab1_android</string>
+    <string name="first_operand">Первый операнд</string>
+    <string name="second_operand">Второй операнд</string>
+    <string name="result_is">Результат</string>
+    <string name="addition">Суммировать</string>
+    <string name="multiplying">Умножить</string>
+    <string name="calculate">Подсчитать</string>
+</resources>

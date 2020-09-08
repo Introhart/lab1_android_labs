@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab1_android</string>
+    <string name="first_operand">First Operand</string>
+    <string name="second_operand">Second Operand</string>
+    <string name="result_is">Result is:</string>
+    <string name="addition">Addition</string>
+    <string name="multiplying">Multiplying</string>
+    <string name="calculate">Calculate</string>
+</resources>
