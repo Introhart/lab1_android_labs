@@ -4,97 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity"
-    android:layout_margin="35dp"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    android:baselineAligned="false">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <fragment
+        android:id="@+id/fragment_1"
+        android:name="com.example.lab1_android.frag_1"
         android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/first_operand"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/input_num1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="32dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/second_operand"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/input_num2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal" />
-
-        <RadioGroup
-            android:id="@+id/radio_group"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/radio_addition"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/addition"
-                android:textSize="18sp" />
-
-            <RadioButton
-                android:id="@+id/radio_multiplying"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/multiplying"
-                android:textSize="18sp" />
-
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_margin="30dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/button_calculate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/calculate"
-            android:textSize="18sp" />
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_2"-->
+<!--        android:name="com.example.lab1_android.frag_2"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
+    <Button
+        android:id="@+id/button_goForward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Forward" />
 
-        <TextView
-            android:id="@+id/textView_result"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/result_is"
-            android:textSize="24sp" />
-
-    </LinearLayout>
 
 </LinearLayout>

@@ -7,4 +7,6 @@
     <string name="addition">Суммировать</string>
     <string name="multiplying">Умножить</string>
     <string name="calculate">Подсчитать</string>
+    <string name="radio_dividing">Разделить</string>
+    <string name="radio_subtraction">Вычесть</string>
 </resources>

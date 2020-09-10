@@ -6,4 +6,6 @@
     <string name="addition">Addition</string>
     <string name="multiplying">Multiplying</string>
     <string name="calculate">Calculate</string>
+    <string name="radio_subtraction">Subtraction</string>
+    <string name="radio_dividing">Dividing</string>
 </resources>

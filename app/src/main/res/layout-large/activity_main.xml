@@ -4,85 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:layout_margin="35dp"
+    tools:context=".MainActivity">
 
-    >
-
-    <TextView
-        android:id="@+id/textView"
+    <fragment
+        android:id="@+id/fragment_1"
+        android:name="com.example.lab1_android.frag_1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/first_operand"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/input_num1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:importantForAutofill="no" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/second_operand"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/input_num2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:importantForAutofill="no" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="32dp" />
-
-    <RadioGroup
-        android:id="@+id/radio_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/radio_addition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/addition"
-            android:textSize="18sp" />
-
-        <RadioButton
-            android:id="@+id/radio_multiplying"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/multiplying"
-            android:textSize="18sp" />
-
-    </RadioGroup>
+        android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/button_calculate"
+        android:id="@+id/button_goForward"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="@string/calculate"
-        android:textSize="18sp" />
+        android:text="Go Forward" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="32dp" />
+    <!--    <fragment-->
+<!--        android:id="@+id/fragment_2"-->
+<!--        android:name="com.example.lab1_android.frag_2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
-    <TextView
-        android:id="@+id/textView_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="@string/result_is"
-        android:textSize="24sp" />
+
 
 </LinearLayout>
