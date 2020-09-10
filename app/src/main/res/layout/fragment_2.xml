@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_operand"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/second_operand"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/Result_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_is"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_substraction_frag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_subtraction"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_division_frag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_dividing"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <Button
+            android:id="@+id/calculate_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackButton"
+            android:text="@string/calculate"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

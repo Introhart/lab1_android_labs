@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/fragment_1"-->
+    <!--        android:name="com.example.lab1_android.frag_1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <fragment
+        android:id="@+id/fragment_2"
+        android:name="com.example.lab1_android.frag_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_goBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
+
+</LinearLayout>
