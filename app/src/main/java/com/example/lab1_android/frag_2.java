@@ -1,5 +1,7 @@
 package com.example.lab1_android;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,13 +18,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class frag_2 extends Fragment {
+public class frag_2 extends Fragment implements DataInterface {
+    Activity activity;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_2, container, false);
         ///
-
+        final TheSingletone singleList = TheSingletone.getInstance();
         final EditText input_num1 = view.findViewById(R.id.input_1);
         final EditText input_num2 = view.findViewById(R.id.input_2);
         final TextView tv_result = view.findViewById(R.id.Result_frag2);
@@ -65,12 +68,16 @@ public class frag_2 extends Fragment {
                     op2 = Float.parseFloat(s_op2);
 
                     if(radio_substraction.isChecked()){
+                        double res = op1 - op2;
                         tv_result.setText(String.valueOf(op1-op2));
                         Toast.makeText(view.getContext(),String.valueOf(op1-op2), Toast.LENGTH_SHORT).show();
+                        singleList.addListItem(op1, op2,  '-', res);
                     }
                     else{
+                        double res = op1 / op2;
                         tv_result.setText(String.valueOf(op1/op2));
                         Toast.makeText(view.getContext(),String.valueOf(op1/op2), Toast.LENGTH_SHORT).show();
+                        singleList.addListItem(op1, op2,  '/', res);
                     }
                 }
                 else{
@@ -82,5 +89,25 @@ public class frag_2 extends Fragment {
 
         ///
         return view;
+    }
+
+
+    @Override
+    public void onAttach(Context context){
+        super.onAttach(context);
+        if(context instanceof Activity){
+            activity = (Activity) context;
+        }
+    }
+
+    @Override
+    public void sendData(HeavyItem item) {}
+
+    private void addListItem(double op1, double op2, double res, char operation){
+        HeavyItem item = new HeavyItem(op1, op2, operation, res);
+        try{
+            ((DataInterface)activity).sendData(item);
+        }
+        catch(ClassCastException ignored){}
     }
 }

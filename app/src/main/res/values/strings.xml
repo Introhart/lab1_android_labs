@@ -8,4 +8,7 @@
     <string name="calculate">Calculate</string>
     <string name="radio_subtraction">Subtraction</string>
     <string name="radio_dividing">Dividing</string>
+    <string name="go_forward">Go Forward</string>
+    <string name="go_back">Go Back</string>
+    <string name="history">History</string>
 </resources>

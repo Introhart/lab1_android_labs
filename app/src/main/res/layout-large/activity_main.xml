@@ -18,7 +18,7 @@
         android:id="@+id/button_goForward"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go Forward" />
+        android:text="@string/go_forward" />
 
     <!--    <fragment-->
 <!--        android:id="@+id/fragment_2"-->

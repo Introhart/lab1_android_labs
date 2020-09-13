@@ -9,4 +9,7 @@
     <string name="calculate">Подсчитать</string>
     <string name="radio_dividing">Разделить</string>
     <string name="radio_subtraction">Вычесть</string>
+    <string name="go_forward">Далее</string>
+    <string name="go_back">Назад</string>
+    <string name="history">История</string>
 </resources>
