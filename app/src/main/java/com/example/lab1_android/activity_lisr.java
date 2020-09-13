@@ -18,11 +18,6 @@ public class activity_lisr extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lisr);
 
-        ArrayList<HeavyItem> items = new ArrayList<HeavyItem>();
-        if(getIntent().getExtras() != null) {
-            //items = (ArrayList<HeavyItem>) getIntent().getSerializableExtra("list");
-
-        }
         TheSingletone singleList = TheSingletone.getInstance();
 
         ListView listView = (ListView)findViewById(R.id.list_of_the_cruel);

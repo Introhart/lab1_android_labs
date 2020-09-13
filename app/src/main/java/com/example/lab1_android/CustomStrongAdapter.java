@@ -47,11 +47,8 @@ public class CustomStrongAdapter extends BaseAdapter {
 
         TextView textViewItemName = (TextView)
                 view.findViewById(R.id.text_view_item_name);
-//        TextView textViewItemDescription = (TextView)
-//                view.findViewById(R.id.text_view_item_description);
-
         String data = String.valueOf(currentItem.getOp1()) + " " + String.valueOf(currentItem.getOperation()) +
-                " " + String.valueOf(currentItem.getOp1()) + " = " + String.valueOf(currentItem.getResult());
+                " " + String.valueOf(currentItem.getOp2()) + " = " + String.valueOf(currentItem.getResult());
 
         textViewItemName.setText(data);
 

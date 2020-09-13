@@ -41,7 +41,6 @@ public class SecondActivity extends AppCompatActivity {
         switch(id){
             case R.id.action_settings:
                 Intent intent = new Intent(this, activity_lisr.class);
-
                 startActivity(intent);
                 return true;
             case R.id.open_settings:
@@ -52,7 +51,6 @@ public class SecondActivity extends AppCompatActivity {
                 return true;
 
         }
-
 
         return super.onOptionsItemSelected(item);
     }

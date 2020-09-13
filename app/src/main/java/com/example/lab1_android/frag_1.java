@@ -18,15 +18,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class frag_1 extends Fragment implements DataInterface {
-    Activity activity;
+    public class frag_1 extends Fragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_1, container, false);
-        /////
-
-
 
         final TheSingletone singleList = TheSingletone.getInstance();
         final EditText input_num1 = view.findViewById(R.id.input_num1);
@@ -90,22 +86,4 @@ public class frag_1 extends Fragment implements DataInterface {
         return view;
     }
 
-    @Override
-    public void onAttach(Context context){
-        super.onAttach(context);
-        if(context instanceof Activity){
-            activity = (Activity) context;
-        }
-    }
-
-    @Override
-    public void sendData(HeavyItem item) {}
-
-    private void addListItem(double op1, double op2, double res, char operation){
-        HeavyItem item = new HeavyItem(op1, op2, operation, res);
-        try{
-            ((DataInterface)activity).sendData(item);
-        }
-        catch(ClassCastException ignored){}
-    }
 }

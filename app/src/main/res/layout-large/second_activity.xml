@@ -9,12 +9,6 @@
     tools:context=".MainActivity"
     tools:ignore="MissingDefaultResource">
 
-    <!--    <fragment-->
-    <!--        android:id="@+id/fragment_1"-->
-    <!--        android:name="com.example.lab1_android.frag_1"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content" />-->
-
     <fragment
         android:id="@+id/fragment_2"
         android:name="com.example.lab1_android.frag_2"

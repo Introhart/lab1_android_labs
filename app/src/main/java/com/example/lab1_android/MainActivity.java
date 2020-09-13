@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.zip.Inflater;
 
-public class MainActivity extends AppCompatActivity implements DataInterface{
+    public class MainActivity extends AppCompatActivity{
 
     protected ArrayList<HeavyItem> items = new ArrayList<HeavyItem>();
 
@@ -77,9 +77,4 @@ public class MainActivity extends AppCompatActivity implements DataInterface{
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void sendData(HeavyItem item){
-        items.add(item);
-
-    }
 }
