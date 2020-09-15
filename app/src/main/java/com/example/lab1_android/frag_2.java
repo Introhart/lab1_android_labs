@@ -18,12 +18,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 public class frag_2 extends Fragment{
+    Button button_submit;
+    TheSingletone singleList;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_2, container, false);
         ///
-        final TheSingletone singleList = TheSingletone.getInstance();
+        singleList = TheSingletone.getInstance();
         final EditText input_num1 = view.findViewById(R.id.input_1);
         final EditText input_num2 = view.findViewById(R.id.input_2);
         final TextView tv_result = view.findViewById(R.id.Result_frag2);
@@ -52,7 +55,7 @@ public class frag_2 extends Fragment{
         }
 
 
-        Button button_submit = view.findViewById(R.id.calculate_frag2);
+        button_submit = view.findViewById(R.id.calculate_frag2);
 
         button_submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,5 +88,11 @@ public class frag_2 extends Fragment{
             }
         });
         return view;
+    }
+
+    public void chv()
+    {
+        //Toast.makeText(this.getContext(),"ChangeButtonColor()_2", Toast.LENGTH_SHORT).show();
+        button_submit.setBackgroundColor(singleList.colorChangeFragment2);
     }
 }

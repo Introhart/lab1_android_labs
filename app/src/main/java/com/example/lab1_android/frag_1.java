@@ -18,13 +18,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-    public class frag_1 extends Fragment{
+    public class frag_1 extends Fragment implements DataInterface{
+
+        TheSingletone singleList;
+        Button button_submit;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_1, container, false);
 
-        final TheSingletone singleList = TheSingletone.getInstance();
+        singleList = TheSingletone.getInstance();
         final EditText input_num1 = view.findViewById(R.id.input_num1);
         final EditText input_num2 = view.findViewById(R.id.input_num2);
         final TextView tv_result = view.findViewById(R.id.textView_result);
@@ -51,7 +55,7 @@ import androidx.fragment.app.Fragment;
              tv_result.setTextSize(16);
         }
 
-        Button button_submit = view.findViewById(R.id.button_calculate);
+        button_submit = view.findViewById(R.id.button_calculate);
 
         button_submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,4 +90,14 @@ import androidx.fragment.app.Fragment;
         return view;
     }
 
-}
+        @Override
+        public void changeButtonColor() {
+            Toast.makeText(this.getContext(),"ChangeButtonColor()", Toast.LENGTH_SHORT).show();
+        }
+        public void chv()
+        {
+            //Toast.makeText(this.getContext(),"ChangeButtonColor()_1", Toast.LENGTH_SHORT).show();
+            button_submit.setBackgroundColor(singleList.colorChangeFragment1);
+
+        }
+    }

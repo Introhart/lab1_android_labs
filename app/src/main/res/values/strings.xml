@@ -11,4 +11,6 @@
     <string name="go_forward">Go Forward</string>
     <string name="go_back">Go Back</string>
     <string name="history">History</string>
+    <string name="change_fragment">Change Fragment</string>
+    <string name="change_color">Change Color</string>
 </resources>

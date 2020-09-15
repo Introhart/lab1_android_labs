@@ -67,10 +67,12 @@ import java.util.zip.Inflater;
                 startActivity(intent);
                 return true;
             case R.id.open_settings:
-                Toast.makeText(getApplicationContext(),"second", Toast.LENGTH_SHORT).show();
+                Intent additional_task = new Intent(this, additional.class);
+                startActivity(additional_task);
+                //Toast.makeText(getApplicationContext(),"second", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.save_settings:
-                Toast.makeText(getApplicationContext(),"third", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"third", Toast.LENGTH_SHORT).show();
                 return true;
 
         }

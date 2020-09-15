@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_lisr"></activity>
+        <activity android:name=".addit_2"></activity>
+        <activity android:name=".additional" />
+        <activity android:name=".activity_lisr" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
