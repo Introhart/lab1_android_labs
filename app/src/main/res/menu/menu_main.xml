@@ -7,9 +7,13 @@
     <item
         android:id="@+id/save_settings"
         android:orderInCategory="2"
-        android:title="BtnColor" />
+        android:title="Play Epic Music" />
     <item
         android:id="@+id/open_settings"
         android:orderInCategory="3"
         android:title="Additional" />
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="4"
+        android:title="Settings" />
 </menu>

@@ -19,6 +19,7 @@ public class activity_lisr extends AppCompatActivity {
         setContentView(R.layout.activity_lisr);
 
         TheSingletone singleList = TheSingletone.getInstance();
+        //singleList.setBaseAppContext(getBaseContext());
 
         ListView listView = (ListView)findViewById(R.id.list_of_the_cruel);
 
@@ -26,6 +27,8 @@ public class activity_lisr extends AppCompatActivity {
         listView.setAdapter(CSA);
 
     }
+
+
 
 
 }

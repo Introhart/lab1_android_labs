@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/butSong1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart of Courage" />
+
+        <RadioButton
+            android:id="@+id/butSong2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sol Invictus" />
+
+        <RadioButton
+            android:id="@+id/butSong3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dragonborn" />
+
+        <Button
+            android:id="@+id/setSongBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="prefSetSong"
+            android:text="Set Song">
+        </Button>
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/themeLightButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light Theme" />
+
+        <RadioButton
+            android:id="@+id/ThemeDarkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark Theme" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Theme" />
+    </RadioGroup>
+</LinearLayout>
